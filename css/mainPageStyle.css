@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Lato';
+
+
+}
+
+#navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    min-height: 30px;
+
+    position: sticky;
+
+    /*Apperance*/
+    background-color: darkblue;
+}
+
+#navbar .nav-links{
+    flex: 2;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+.link-item{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 2px;
+}
+.link-item:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+body{
+    
+}
+.title{
+    margin-right: 10px;
+}
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    min-width: 100vw;
+}
+.contact-option{
+
+    padding: 15px;
+    margin: 2px;
+}
+
+.contact-option a{
+    text-decoration: none;
+    color: cadetblue;
+    padding: 5px;
+    
+}
