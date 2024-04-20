@@ -2,7 +2,8 @@
 
 *{
     font-family: 'Lato';
-
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -15,8 +16,6 @@
 
     position: sticky;
 
-    /*Apperance*/
-    background-color: darkblue;
 }
 
 #navbar .nav-links{
@@ -31,17 +30,33 @@
     color: white;
     padding: 15px;
     margin: 2px;
+    border-radius: 5px;
 }
 .link-item:hover{
-    background-color: white;
-    color: black;
+    background-color: #de7a22;
+    color: white;
     transition: 0.2s;
 }
-body{
-    
+.back-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/johns-hopkins-university-1590925_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #20948b80;
 }
 .title{
+    margin-top: 20px;
+    margin-left: 20px;
     margin-right: 10px;
+    color:white;
 }
 footer
 {
@@ -59,7 +74,7 @@ footer
 
 .contact-option a{
     text-decoration: none;
-    color: cadetblue;
+    color: white;
     padding: 5px;
     
 }
