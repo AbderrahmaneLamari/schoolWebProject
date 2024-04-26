@@ -12,29 +12,34 @@ body{
 }
 
 #navbar{
+    width: 100%;
     display:flex;
     flex-direction: row;
-    justify-content: center;
-
+    justify-content: space-evenly;
     min-height: 30px;
+    top: 0;
+    position: absolute;
+    z-index: 10;
 
-    position: sticky;
 
+    
 }
-
-#navbar .nav-links{
-    flex: 2;
-
+#navbar img{
+    min-width: 20vw;
+}
+.nav-links{
+    
     display: flex;
     justify-content: space-around;
-
 }
+
 .link-item{
     text-decoration: none;
     color: white;
     padding: 15px;
     margin: 2px;
     border-radius: 5px;
+    
 }
 .link-item:hover{
     background-color: #de7a22;
@@ -46,8 +51,10 @@ body{
     height: 100vh;
     background-image: url(../images/johns-hopkins-university-1590925_960_720.jpg);
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
 
 }
 
@@ -56,11 +63,19 @@ body{
     height: 100vh;
     background-color: #20948b80;
 }
+.title-box{
+    position: absolute;
+    top: 55vh;
+    left: 5vw;
+    z-index: 1;
+}
 .title{
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 10px;
     color:white;
+
+
 }
 footer
 {
@@ -92,7 +107,7 @@ footer
 }
 .content{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding: 5px;
     
 }
@@ -101,7 +116,7 @@ footer
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: azure;
 }
 .content-item{
