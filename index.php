@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abderrahamne's Formation School</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link rel="stylesheet" href="./css/headerStyle.css">
     <link rel="stylesheet" href="./css/mainPageStyle.css">
+    <link rel="stylesheet" href="./css/defaultStyle.css">
 </head>
 <body>
 
 
     
-        <nav id="navbar">
-            <img class="nav-item" src="#" alt="logo">
-    
-            <!-- Contains the navigation buttons-->
-            <div class="nav-links nav-item">
-                <a class="link-item" href="#">Home</a>
-                <a class="link-item" href="#">Courses</a>
-                <a class="link-item" href="#">FAQ</a>
-                <a class="link-item" href="#">Contact Us</a>
-            </div>
-    
-        </nav>
+    <?php include('header.html'); ?>
     
         <div class="back-image">
 
@@ -56,7 +46,7 @@
             If you are interested in joining our school, click down to inscript!
 
         </p>
-        <a href="#">Inscript</a>
+        <a href="inscript.php">Inscript</a>
     </div>
 
     <div class="content-item learnmore-option">

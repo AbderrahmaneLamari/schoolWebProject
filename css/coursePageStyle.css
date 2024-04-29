@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *{
+    font-family: 'Lato';
     margin: 0px;
     padding: 0px;
+
+
 }
 
+
 body{
+    background-color: #ddd;
+}
+#navbar{
+
     background-color: #20948b80;
 }
 nav{
@@ -16,9 +26,9 @@ nav{
     align-items: center;
 
 
-
 }
 .interface{
+    margin-top: 13vh;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -29,9 +39,9 @@ nav{
     flex-basis: 0;
 }
 .left-panel{
-
+    width: 0px;
     background-color: #f4cc70;
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -48,7 +58,7 @@ nav{
     padding: 10px;
     margin: 10px;
     
-    width: 70%;
+    width: inherit;
     height: 5vh;
     border-radius: 17px;
 
@@ -62,26 +72,47 @@ nav{
     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .main-panel{
-    background-color: #f00505;
+
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
     flex-grow: 3;
     
 }
 
 .course-item{
 
-    width: 100%;
+    width: 60%;
     height: 10vh;
+
     display: flex;
     text-align: center;
     justify-content: space-around;
     align-items: center;
 
-    border-bottom: #999 1px solid;
-    
+    border: #999 1px solid;
+    border-radius: 10px;
+
+    margin-top: 5px;
 }
 .course-item:hover{
     background-color: #ccc;
     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* I don't who is the effect of the cubic bezier, but is good looking. verify later.*/
+
+}
+.course-item a{
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: 600;
+
+}
+
+.course-item a:hover{
+
+    color: #0fb900;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 }
 .course-info{

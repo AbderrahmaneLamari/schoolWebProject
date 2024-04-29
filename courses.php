@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/coursePageStyle.css">
     <link rel="stylesheet" href="./css/mainPageStyle.css">
+    <link rel="stylesheet" href="./css/headerStyle.css">
+    <link rel="stylesheet" href="./css/defaultStyle.css">
     <title>Available Courses</title>
 </head>
 <body>
 
-    <nav id="navigation">
-        
-            <img class="nav-item" src="#" alt="logo">
+    <?php include('header.html'); ?>
     
-            <!-- Contains the navigation buttons-->
-            <div class="nav-links nav-item">
-                <a class="link-item" href="#">Home</a>
-                <a class="link-item" href="#">Courses</a>
-                <a class="link-item" href="#">FAQ</a>
-                <a class="link-item" href="#">Contact Us</a>
-            </div>
-    </nav>
     <div class="interface">
 
         <div class="left-panel panel">
@@ -59,11 +51,12 @@ foreach ($files as $file) {
                 $address = $course["address"];
                 // Output HTML for the course
                 ?>
+
                 <div class='course-item'>
                     <img src='<?php echo $image; ?>' alt='course-image' class='course-img course-info'>
                     <div class="course-info"><a href=<?php echo '#'. $address ?> class='course-info'><?php echo $name; ?></a></div>
                     <div class='course-date course-info'><?php echo $date; ?></div>
-                    <div class='course-length course-info'><?php echo $length; ?></div>
+                    <div class='course-length course-info'><?php echo $length . 'm'; ?></div>
                 </div>
                 <?php
             } else {
