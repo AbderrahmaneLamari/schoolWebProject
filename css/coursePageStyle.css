@@ -11,81 +11,67 @@
 
 body{
     background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 #navbar{
 
     background-color: #20948b80;
-}
-nav{
-
-    position: sticky;
     height: 13vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
 }
+
 .interface{
+
+    background-color: #0fb900;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
     margin-top: 13vh;
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    
-}
-.panel{
-    flex-basis: 0;
-}
-.left-panel{
-    width: 0px;
-    background-color: #f4cc70;
-    flex-grow: 0;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: flex-start;
-
-}
-.left-panel a{
-
-    text-align: center;
-    color: black;
-    font-size: 19px;
-    text-decoration: none;
-
-    padding: 10px;
-    margin: 10px;
-    
-    width: inherit;
-    height: 5vh;
-    border-radius: 17px;
-
-    
+    flex-direction: row;    
 }
 
-.left-panel a:hover{
 
+#coursesTitle{
+    position: absolute;
+    top: 50vh;
+    left: 33vw;
+    font-size: 59px;
+    font-weight: bold;
+    color: white;
 
-    background-color: #f5c452;
-    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#backImg{
+    width: 100vw;
+    left: 0px;
+    z-index: -1;
 }
 .main-panel{
 
-    margin-top: 20vh;
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ddd;
-    flex-grow: 3;
+    height: 100vh;
     
 }
 
 .course-item{
 
     width: 60%;
-    height: 10vh;
+    height: 15vh;
 
     display: flex;
     text-align: center;
@@ -95,7 +81,7 @@ nav{
     border: #999 1px solid;
     border-radius: 10px;
 
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .course-item:hover{
     background-color: #ccc;
@@ -115,6 +101,8 @@ nav{
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 }
+
+
 .course-info{
     flex-grow: 1;
 }

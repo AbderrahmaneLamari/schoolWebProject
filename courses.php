@@ -7,39 +7,35 @@
     <link rel="stylesheet" href="./css/mainPageStyle.css">
     <link rel="stylesheet" href="./css/headerStyle.css">
     <link rel="stylesheet" href="./css/defaultStyle.css">
+    <link rel="stylesheet" href="./css/footerStyle.css">
     <title>Available Courses</title>
 </head>
 <body>
 
     <?php include('header.html'); ?>
     
-    <div class="interface">
 
-        <div class="left-panel panel">
-            <a href="#">stuff</a>
-            <a href="#">stuff</a>
-            <a href="#">stuff</a>
-            <a href="#">stuff</a>
-        </div>
-    
-        <div class="main-panel panel">
+
+    <div id="coursesTitle">Courses We Offer</div>
+    <img id="backImg" src="./images/books background image 2.png" alt="books image">
+    <div class="main-panel panel">
             
-        <?php 
+    <?php 
 
-// Directory containing JSON files
-$directory = "./course-files";
+        // Directory containing JSON files
+        $directory = "./course-files";
 
-// Scan the directory for JSON files
-$files = array_diff(scandir($directory), array('..', '.'));
+        // Scan the directory for JSON files
+        $files = array_diff(scandir($directory), array('..', '.'));
 
-// Iterate through the files
-foreach ($files as $file) {
-    // Check if the file is a JSON file
-    if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
-        $jsonfile = file_get_contents("$directory/$file");
+        // Iterate through the files
+        foreach ($files as $file) {
+             // Check if the file is a JSON file
+            if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+                 $jsonfile = file_get_contents("$directory/$file");
 
-        // Check if the file was read successfully
-        if ($jsonfile !== false) {
+             // Check if the file was read successfully
+            if ($jsonfile !== false) {
             $course = json_decode($jsonfile, true);
 
             // Check if JSON decoding was successful
@@ -50,32 +46,33 @@ foreach ($files as $file) {
                 $date = $course["date"];
                 $address = $course["address"];
                 // Output HTML for the course
-                ?>
+            
 
-                <div class='course-item'>
-                    <img src='<?php echo $image; ?>' alt='course-image' class='course-img course-info'>
-                    <div class="course-info"><a href=<?php echo '#'. $address ?> class='course-info'><?php echo $name; ?></a></div>
-                    <div class='course-date course-info'><?php echo $date; ?></div>
-                    <div class='course-length course-info'><?php echo $length . 'm'; ?></div>
-                </div>
-                <?php
+                echo "<div class='course-item'>
+                    <div class='course-info'><a href='$address' class='course-info'> $name</a></div>
+                    <div class='course-date course-info'> $date</div>
+                    <div class='course-length course-info'> $length wk</div>
+                </div>";
+
             } else {
                 // JSON decoding failed
                 echo "Failed to decode JSON file: $file";
             }
-        } else {
+            }
+             else 
+            {
             // Failed to read file
             echo "Failed to read file: $file";
+            }
+            }
         }
-    }
-}
-?>
+    ?>
 
 
-        </div>
+</div>
         
-    </div>
 
-    
+
+<?php include('footer.html'); ?>
 </body>
 </html>

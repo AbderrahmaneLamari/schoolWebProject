@@ -1,0 +1,7 @@
+{
+    "name": "Telecommunications",
+    "length": 4,
+    "image": "./images/course-icons/telecommunication.png",
+    "date": "18/11/2023",
+    "address": "./course-pages/telecommunications.php"
+}

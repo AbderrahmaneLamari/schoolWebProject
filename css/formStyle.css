@@ -2,40 +2,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
-    font-family: 'Lato';
-    
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
 }
 
-table{
+body{
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 30vh;
+
+    background: linear-gradient(135deg, #20948b, #f4cc70);
+
 }
 
-td{
-    padding: 10px;
-}
+.inscription{
 
-
-input{
-    font-size: large;
-    padding: 7px;
-    outline: none;
+    width: 700px;
+    height: 400px;
+    background-color: linear-gradient(135deg, #f4cc70, #20948b80);
+    background-color: white;
     border-radius: 5px;
+}
 
+.title{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 15px;
 }
-#lastRow td{
-    text-align: center;
-}
-.btn{
 
-    padding-left: 10px;
-    padding-right: 10px;
+.title::after{
+    content: '';
+    display: block;
+    position: relative;
+    left: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: #f4cc70;
 }
+
 form{
-    padding: 20px;
-    background-color: #20948b80;
 
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.input-fields{
+    max-height: 300px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+.input-box .text-input{
+    font-size: 17px;
+    font-family: 'Lato';
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+
+
+    outline: none;
+    border-style: none;
+    border: 1px solid #ddd;
+
+}
+
+.input-box .text-input:focus{
+
+    border: 1px  solid #20948b;
+    transition: 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.input-box label{
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.input-box label::after{
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 3px;
+    width: 10px;
+    height: 2px;
+    background-color: #20948b;
+
+}
+.submission-field{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submission-field input{
+
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    background-color: lightblue;
+    border-style: none;
+    outline: 1px solid #ddd;
+    border-radius: 5px;
+    color: black;
 }

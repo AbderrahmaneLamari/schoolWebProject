@@ -1,0 +1,7 @@
+{
+    "name": "Web Dev",
+    "length": 7,
+    "image": "./images/course-icons/web-dev.png",
+    "date": "09/03/2022",
+    "address": "course-pages/web-dev.php"
+}

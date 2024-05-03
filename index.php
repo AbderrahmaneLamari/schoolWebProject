@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/headerStyle.css">
     <link rel="stylesheet" href="./css/mainPageStyle.css">
     <link rel="stylesheet" href="./css/defaultStyle.css">
+    <link rel="stylesheet" href="./css/footerStyle.css">
 </head>
 <body>
 
@@ -61,13 +62,7 @@
 
 </div>
 
-    <footer>
-        <div class="citation contact-option"><a href="#"> © 2024 Abderrahamne Lamari. No Rights Reserved.</a></div>
-        <div class="phone contact-option"><a href="tel:+213799112233">Call me</a> </div>
-        <div class="email contact-option"><a href="mailto:someOne@nowhere.there">Email me</a></div>
-        <div class="fb contact-option"><a href="http://facebook.com">My facebook</a></div>
-        <div class="insta contact-option"><a href="http://instagram.com">My Instagram</a></div>
-    </footer>
+    <?php include('footer.html'); ?>
 
     
 </body>
