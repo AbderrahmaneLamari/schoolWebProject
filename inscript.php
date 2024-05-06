@@ -26,7 +26,7 @@
                 
 
                 <div class="input-box">
-                    <label for="lastName">Last Name</label>
+                    <label for="lname">Last Name</label>
                     <input type="text" name="lname" id="lastname" class="text-input" placeholder="Enter your last name" required>
                 </div>
                 

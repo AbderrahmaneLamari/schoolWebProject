@@ -18,11 +18,19 @@
         }
 
         .backlay{
+
+            z-index: -1;
             bottom: -235vh;
+            background: linear-gradient(to right, transparent 50%, #010402 50%), linear-gradient(to right, #f4cc70, #20948b);
+            background-size: 16px 2px, 100% 2px;
+
         }
+
+
         </style>
+            
 </head>
-<body>
+<body background="../images/course-images/ASD-background.jpg">
 
     <?php include('header.html')?>
 

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/course-description-style.css">
 
 </head>
-<body>
+    
+<body background="../images/course-images/web-dev-course-image.jpg">
 
     <?php include('header.html')?>
 

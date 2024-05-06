@@ -51,7 +51,7 @@
     </div>
 
     <div class="content-item learnmore-option">
-        <img src="/images/customer service learn more.webp" alt="learn more image" >
+        <img src=".\images\more Details image edited.jpg" alt="learn noorre image" >
         <p>
             If you want to know what we offer in detail, click here.
         </p>

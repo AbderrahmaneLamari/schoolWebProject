@@ -3,5 +3,5 @@
     "length": 6,
     "date": "12/03/2025",
     "image": "./images/course-icons/network-engineering.png",
-    "address": "/course-pages/net-works.php"
+    "address": "./course-pages/net-works.php"
 }

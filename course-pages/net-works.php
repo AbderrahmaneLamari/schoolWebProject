@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="../css/headerStyle.css">
     <link rel="stylesheet" href="../css/course-description-style.css">
 
+    <style>
+        .transition-item{
+            margin-bottom: 14vh;
+        }
+        #content{
+            margin-top: 5vh;
+        }
+        .backlay{
+            width: 100%;
+            position: absolute;
+            bottom: -229vh;
+            height: 240vh;
+            z-index: -1;
+            background: linear-gradient(to right, transparent 50%, #061425 50%), linear-gradient(to right, #f4cc70, #20948b);
+            background-size: 16px 2px, 100% 2px;
+
+        }   
+    </style>
 </head>
-<body>
+<body background="../images/course-images/network-engineering-background.jpg">
 
     <?php include('header.html')?>
 

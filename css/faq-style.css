@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
+
+}
+
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #20948b, #f4cc70);
+    height: 100vh;
+}
+
+.question-container{
+
+
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: White;
+}
+
+.question-item{
+
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.question{
+
+    font-size: 20px;
+    font-weight: bold;
+}
+.answer{
+
+    font-size: 17px;
+    
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+.questions-title{
+    color: White;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
