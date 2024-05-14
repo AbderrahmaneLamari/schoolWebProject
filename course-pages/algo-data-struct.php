@@ -32,7 +32,7 @@
 </head>
 <body background="../images/course-images/ASD-background.jpg">
 
-    <?php include('header.html')?>
+    <?php include('header.php')?>
 
 
 

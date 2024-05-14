@@ -29,11 +29,8 @@ try
 }
 catch(Exception $e)
 {
-    include('header.html') ;
-    echo( "  <div class='connection-error'>
-             Sorry, there was a server error, try again later.
-             </div>" 
-          );
+    include('header.php') ;
+    include('./server-error-message.php');
     
     include('footer.html') ;
     die();
@@ -41,22 +38,18 @@ catch(Exception $e)
 
 ?>
 
-    <?php include('header.html') ;?>
+    <?php include('header.php') ;?>
 
    <?php 
 
     try
     {
         $conn->execute_query($insertStatement);
-        echo "<div class='connection-success'>
-                You have inscripted successfully in $course.
-             </div>";
+        include('./registered-success-message.php');
     }
     catch(Exception $e)
     {
-        echo "<div class='connection-error'>
-        Sorry, there was an error inscripting you. Check the data you entered.
-        </div>";
+        include('./input-error-message.php');
     }
     finally
     {

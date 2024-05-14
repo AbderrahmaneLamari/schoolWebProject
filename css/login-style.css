@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+
+body{
+    background: linear-gradient(135deg, #20948b, #f4cc70);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#login-island{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+#login-island .login-title{
+
+    text-align: left;
+    width: 100%;
+
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#login-island .login-title::after{
+
+    content: '';
+    display: block;
+
+    width: 17px;
+    height: 4px;
+    background-color: #f4cc70;
+
+    position: relative;
+    left: 3px;
+}
+
+form{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items : flex-start;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+    width: 300px;
+    height: 300px;
+}
+
+.input-item{
+
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    
+
+    
+}
+
+.input-item input {
+
+    border-style: none;
+    outline: none;
+
+    border: 1px #ddd solid;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0px;
+
+    font-size: 16px;
+
+    width: 96%;
+
+}
+
+.input-item label{
+
+    position: relative;
+    left: 0px;
+
+}
+.input-item input:focus{
+
+    border: 1px #20948b solid;
+
+    transition: 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.input-item label::after{
+
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+
+    
+    background-color: #20948b;
+    position: relative;
+    left: 3px;
+}
+
+.input-item button{
+
+    padding: 10px 15px;
+    font-size: 15px;
+
+    background-color: skyblue;
+    border-radius: 5px;
+
+    border-style: none;
+
+    border: 1px #ddd solid;
+    margin: auto;
+}
+
+.input-item button:hover{
+
+    cursor: pointer;
+}
+
+footer{
+
+    position: absolute;
+    bottom: 0vh;
+}

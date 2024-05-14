@@ -1,0 +1,16 @@
+.error-message{
+
+    margin: auto;
+    width: 60%;
+    height: 200px;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-color: White;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

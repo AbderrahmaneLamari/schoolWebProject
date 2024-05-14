@@ -9,7 +9,7 @@
     <title>Contacts</title>
 </head>
 <body>
-    <?php include('header.html'); ?>
+    <?php include('header.php'); ?>
     
 
     <div class="contact-container">

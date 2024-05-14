@@ -11,7 +11,7 @@
     
 <body background="../images/course-images/web-dev-course-image.jpg">
 
-    <?php include('header.html')?>
+    <?php include('header.php')?>
 
 
 

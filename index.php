@@ -14,7 +14,7 @@
 
 
     
-    <?php include('header.html'); ?>
+    <?php include('header.php'); ?>
     
         <div class="back-image">
 
@@ -51,7 +51,7 @@
     </div>
 
     <div class="content-item learnmore-option">
-        <img src=".\images\more Details image edited.jpg" alt="learn noorre image" >
+        <img src=".\images\more Details image edited.jpg" alt="learn noorre image" title="Koka">
         <p>
             If you want to know what we offer in detail, click here.
         </p>

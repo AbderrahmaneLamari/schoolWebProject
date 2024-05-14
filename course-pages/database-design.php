@@ -29,7 +29,7 @@
 </head>
 <body background="../images/course-images/database-design-background.jpg">
 
-    <?php include('header.html')?>
+    <?php include('header.php')?>
 
 
 

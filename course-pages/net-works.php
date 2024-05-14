@@ -28,7 +28,7 @@
 </head>
 <body background="../images/course-images/network-engineering-background.jpg">
 
-    <?php include('header.html')?>
+    <?php include('header.php')?>
 
 
 

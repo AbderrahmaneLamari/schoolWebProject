@@ -31,7 +31,7 @@
 </head>
 <body background="../images/course-images/telecommunication-background.jpg">
 
-    <?php include('header.html')?>
+    <?php include('header.php')?>
 
 
 

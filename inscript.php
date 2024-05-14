@@ -10,7 +10,7 @@
 </head>
 <body>
 
-        <?php include('./header.html'); ?>
+        <?php include('./header.php'); ?>
 
         <div class="inscription">
             <div class="title">

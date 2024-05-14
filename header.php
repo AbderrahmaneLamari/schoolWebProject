@@ -8,6 +8,9 @@
             <a class="link-item" href="courses.php">Courses</a>
             <a class="link-item" href="faq.php">FAQ</a>
             <a class="link-item" href="contact-us.php">Contact Us</a>
+            <a class="link-item" href="login.php">Adminstration</a>
         </div>
 
     </nav>
+    
+<?php session_start(); ?>

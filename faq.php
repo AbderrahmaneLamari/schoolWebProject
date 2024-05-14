@@ -10,7 +10,7 @@
     <title>FAQ</title>
 </head>
 <body>
-    <?php include('header.html'); ?>
+    <?php include('header.php'); ?>
 
     <span class="questions-title">
         Frequently Asked Questions
